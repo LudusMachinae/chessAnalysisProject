@@ -1,0 +1,13 @@
+#folders
+/.venv/
+
+#files
+/notes.txt
+/credentials.db
+
+#filetypes
+*.env
+*.log
+*.json
+*.db
+*.sqlite
