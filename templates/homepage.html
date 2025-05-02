@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+
+{% block head %}
+
+    <link   rel="stylesheet"
+            href="https://unpkg.com/@chrisoakman/chessboard2@0.5.0/dist/chessboard2.min.css"
+            integrity="sha384-47VeTDpmy4yT21gKPXQcLQYQZwlmz27gEH5NTrOmTk3G/SGvMyltclOW/Q8uE+sL"
+            crossorigin="anonymous">
+
+    <script src="https://unpkg.com/@chrisoakman/chessboard2@0.5.0/dist/chessboard2.min.js"
+            integrity="sha384-/KwQCjA1GWovZNV3QDVtvSMDzO4reGgarF/RqHipr7hIUElH3r5zNl9WEPPOBRIF"
+            crossorigin="anonymous"></script>
+
+{% endblock %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+    <!-- Everything past this is normal website content -->
+    <div style="height: 10vh"></div>
+    <div id="myBoard" style="width: 400px;"></div>
+
+{% endblock %}
+
+{% block script %} 
+    <script>
+        const board = Chessboard2('myBoard')
+    </script>
+{% endblock %}
